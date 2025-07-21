@@ -23,4 +23,5 @@ jobs:
           Start-Process -NoNewWindow ./ngrok/ngrok.exe "tcp 3389"
 
       - name: Keep session alive
-        run: timeout /t 21600
+        shell: bash
+        run: sleep 21600
